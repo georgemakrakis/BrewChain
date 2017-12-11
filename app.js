@@ -27,10 +27,16 @@ let BrewHTTP = function ()
     app.get('/spawnBrew/:teammember', (req, res) =>
     {
         console.time('block create time');
-        let newBlock = node1.createBlock(req.params.teammember);
+        // Around 110-115 sec for 10k nodes
+        // for(let i=0;i<10000;i++)
+        // {
+        //     let newBlock = node1.createBlock(req.params.teammember+1);
+        // }
+
+        let newBlock = node1.createBlock(req.params.teammember+1);
         console.timeEnd('block create time');
 
-        console.log('block created');
+        console.log('blocks created');
         res.send();
     });
 
