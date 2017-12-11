@@ -7,6 +7,6 @@ Open a terminal and navigate to the project folder. Then run **node app.js**. Ha
 
 After that you can add some nodes to a chain using a browser by typing **http://localhost:port/addNode/node_number**.
 
-Also you can create a block and dispatch it in the node with the following request **http://localhost:port/spawnBrew/block1’**
+Also you can create a block and dispatch it in the node with the following request **http://localhost:port/spawnBrew/block1**
 
 
