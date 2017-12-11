@@ -26,7 +26,10 @@ let BrewHTTP = function ()
 
     app.get('/spawnBrew/:teammember', (req, res) =>
     {
+        console.time('block create time');
         let newBlock = node1.createBlock(req.params.teammember);
+        console.timeEnd('block create time');
+
         console.log('block created');
         res.send();
     });
